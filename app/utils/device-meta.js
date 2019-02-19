@@ -27,7 +27,9 @@ import {
   LAYOUT_AANZEE,
   LAYOUT_LUNAR,
   LAYOUT_SATISFACTION75,
-  LAYOUT_G60
+  LAYOUT_G60,
+  LAYOUT_DAISY,
+  LAYOUT_SPACE65
 } from './kle-parser';
 import {
   parseLayout,
@@ -54,7 +56,9 @@ import {
   MATRIX_AANZEE,
   MATRIX_LUNAR,
   MATRIX_SATISFACTION75,
-  MATRIX_G60
+  MATRIX_G60,
+  MATRIX_DAISY,
+  MATRIX_SPACE65
 } from './layout-parser';
 
 export type Device = {
@@ -238,6 +242,18 @@ export const DEVICE_META_MAP: DeviceMetaMap = {
     layout: LAYOUT_G60,
     matrixLayout: MATRIX_G60,
     lights: false,
+  },
+  [0x12092328]: {
+    name: 'Daisy',
+    layout: LAYOUT_DAISY,
+    matrixLayout: MATRIX_DAISY,
+    lights: true
+  },
+  [0xfeed0000]: {
+    name: 'Space65',
+    layout: LAYOUT_SPACE65,
+    matrixLayout: MATRIX_SPACE65,
+    lights: true
   }
 };
 

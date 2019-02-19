@@ -181,6 +181,17 @@ export const LAYOUT_G60 = `["x","x","x","x","x","x","x","x","x","x","x","x","x",
 ["x","x","x","x","x","x","x","x","x","x","x","x","x","x","x"],
 [{w:1.25},"x",{w:1.25},"x",{w:1.25},"x",{w:6.25},"x","x","x","x","x","x"]`;
 
+export const LAYOUT_DAISY = `[{c:"#a598c5",t:"#efefea",a:7},"",{c:"#efefea",t:"#a598c5"},"","","","","","","","","","",{c:"#a598c5",t:"#efefea"},""],
+[{w:1.25},"",{c:"#efefea",t:"#a598c5"},"","","",{n:true},"","","",{n:true},"","","",{c:"#a598c5",t:"#efefea",w:1.75},""],
+[{w:1.75},"",{c:"#efefea",t:"#a598c5"},"","","","","","","","","",{c:"#a598c5",t:"#efefea",w:1.25},""],
+[{w:1.25},"","",{w:1.25},"",{c:"#efefea",t:"#a598c5",w:2.25},"",{w:2.75},"",{c:"#a598c5",t:"#efefea",w:1.25},"","",{w:1.25},""]`;
+
+export const LAYOUT_SPACE65 = `[{c:"#0073a2",t:"#CCCCB7"},"x",{c:"#6e6d6b"},"x","x","x","x","x","x","x","x","x","x","x","x","x",{c:"#0073a2"},"x","x"],
+[{w:1.5},"x",{c:"#6e6d6b"},"x","x","x","x","x","x","x","x","x","x","x","x",{c:"#0073a2",w:1.5},"x","x"],
+[{w:1.75},"x",{c:"#6e6d6b"},"x","x","x",{n:true},"x","x","x",{n:true},"x","x","x","x","x",{c:"#0073a2",w:2.25},"x","x"],
+[{w:1.25},"x","x",{c:"#6e6d6b"},"x","x","x","x","x","x","x","x","x","x",{c:"#0073a2",w:1.75},"x","x","x"],
+[{w:1.25},"x",{w:1.25},"x",{w:1.25},"x",{w:2.25},"x",{w:1.25},"x",{w:2.75},"x",{w:1.25},"x",{w:1.25},"x",{x:0.5},"x","x","x"]`;
+
 export function parseKLERaw(kle: string): ParsedKLE {
   const kleArr = kle.split(',\n');
   const parsedKLE: OuterReduceState = kleArr.reduce(
